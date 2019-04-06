@@ -112,13 +112,12 @@ void Log::init()
 	info(S_FMT("Written by Simon Judd, 2008-%s", year));
 #ifdef SFML_VERSION_MAJOR
 	info(S_FMT(
-		"Compiled with wxWidgets %i.%i.%i and SFML %i.%i.%i",
+		"Compiled with wxWidgets %i.%i.%i and SFML %i.%i",
 		wxMAJOR_VERSION,
 		wxMINOR_VERSION,
 		wxRELEASE_NUMBER,
 		SFML_VERSION_MAJOR,
-		SFML_VERSION_MINOR,
-		SFML_VERSION_PATCH
+		SFML_VERSION_MINOR
 	));
 #else
 	info(S_FMT(

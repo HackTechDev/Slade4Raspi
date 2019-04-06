@@ -96,7 +96,7 @@ if(APPLE)
 endif(APPLE)
 
 # enable SSE instructions for dumb library
-set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -D_USE_SSE -msse")
+#set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -D_USE_SSE -msse")
 
 # External libraries are compiled separately to enable unity builds
 add_subdirectory(External)

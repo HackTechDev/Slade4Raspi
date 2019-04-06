@@ -415,12 +415,7 @@ bool AudioEntryPanel::openAudio(MemChunk& audio, string filename)
 		audio_type_ = Sound;
 
 		// Enable play controls
-#if (SFML_VERSION_MAJOR == 2 && SFML_VERSION_MINOR < 2)
-		// SFML before 2.2 has a bug where it reports an incorrect value for long sounds, so compute it ourselves then
-		setAudioDuration((sound_buffer->getSampleCount() / sound_buffer->getSampleRate())*(1000/sound_buffer->getChannelCount()));
-#else
 		setAudioDuration(sound_buffer_->getDuration().asMilliseconds());
-#endif
 		btn_play_->Enable();
 		btn_pause_->Enable();
 		btn_stop_->Enable();

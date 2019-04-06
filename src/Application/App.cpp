@@ -49,7 +49,7 @@
 #include "MainEditor/MainEditor.h"
 #include "MapEditor/NodeBuilders.h"
 #include "OpenGL/Drawing.h"
-#include "Scripting/Lua.h"
+//#include "Scripting/Lua.h"
 #include "Scripting/ScriptManager.h"
 #include "TextEditor/TextLanguage.h"
 #include "TextEditor/TextStyle.h"
@@ -383,7 +383,7 @@ bool App::init(vector<string>& args, double ui_scale)
 	SAction::initActions();
 
 	// Init lua
-	Lua::init();
+	//Lua::init();
 
 	// Init UI
 	UI::init(ui_scale);
@@ -599,7 +599,7 @@ void App::exit(bool save_config)
 	}
 
 	// Close lua
-	Lua::close();
+	//Lua::close();
 
 	// Close DUMB
 	dumb_exit();

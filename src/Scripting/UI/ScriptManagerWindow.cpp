@@ -35,7 +35,7 @@
 #include "General/Misc.h"
 #include "General/SAction.h"
 #include "Graphics/Icons.h"
-#include "Scripting/Lua.h"
+//#include "Scripting/Lua.h"
 #include "Scripting/ScriptManager.h"
 #include "ScriptManagerWindow.h"
 #include "ScriptPanel.h"
@@ -795,13 +795,14 @@ bool ScriptManagerWindow::handleAction(string id)
 	// Script->Run
 	if (id == "scrm_run")
 	{
+		/*
 		Lua::setCurrentWindow(this);
 
 		if (!Lua::run(script_clicked_ ? script_clicked_->text : currentScriptText()))
 			Lua::showErrorDialog();
 
 		script_clicked_ = nullptr;
-
+		*/
 		return true;
 	}
 

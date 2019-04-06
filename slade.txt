@@ -1,0 +1,8 @@
+Slade for Raspberry Pi 3  
+========================  
+  
+Version: 3.1.2   Commit: a253284  Tag: 3.1.2  
+                 Commit: 66879ff48be  
+                 Commit: 8753909df  
+Version: 3.1.2b  Commit: d23d61c5  Build Success  
+  

@@ -34,7 +34,7 @@
 #include "ScriptManager.h"
 #include "UI/ScriptManagerWindow.h"
 #include "Archive/ArchiveManager.h"
-#include "Lua.h"
+//#include "Lua.h"
 
 
 // ----------------------------------------------------------------------------
@@ -418,11 +418,13 @@ void ScriptManager::populateEditorScriptMenu(wxMenu* menu, ScriptType type, cons
 // ----------------------------------------------------------------------------
 void ScriptManager::runArchiveScript(Archive* archive, int index, wxWindow* parent)
 {
+/*
 	if (parent)
 		Lua::setCurrentWindow(parent);
 
 	if (!Lua::runArchiveScript(scripts_editor[ScriptType::Archive][index]->text, archive))
 		Lua::showErrorDialog(parent);
+*/
 }
 
 // ----------------------------------------------------------------------------
@@ -432,11 +434,13 @@ void ScriptManager::runArchiveScript(Archive* archive, int index, wxWindow* pare
 // ----------------------------------------------------------------------------
 void ScriptManager::runEntryScript(vector<ArchiveEntry*> entries, int index, wxWindow* parent)
 {
+/*
 	if (parent)
 		Lua::setCurrentWindow(parent);
 
 	if (!Lua::runEntryScript(scripts_editor[ScriptType::Entry][index]->text, entries))
 		Lua::showErrorDialog(parent);
+*/
 }
 
 // ----------------------------------------------------------------------------
@@ -446,9 +450,12 @@ void ScriptManager::runEntryScript(vector<ArchiveEntry*> entries, int index, wxW
 // ----------------------------------------------------------------------------
 void ScriptManager::runMapScript(SLADEMap* map, int index, wxWindow* parent)
 {
+/*
 	if (parent)
 		Lua::setCurrentWindow(parent);
 
 	if (!Lua::runMapScript(scripts_editor[ScriptType::Map][index]->text, map))
 		Lua::showErrorDialog(parent);
+*/
 }
+
